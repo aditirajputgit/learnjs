@@ -1,7 +1,7 @@
 //Javascript execution context 
 
 //iska mtlb ye hota h ki idar javascript m koi si bhi file kese run kregi 
- //global execution context 
+ //global execution context //ye to hmeah hi hoga chahe kuch ho 
  //local execution context 
  //eval exection content  // ye mongo db m use hota h to jaroori ni  hum isse pde
 
