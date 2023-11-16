@@ -1,0 +1,48 @@
+getElementById , getElementByClassName , direct id ka use , querySelector
+
+
+//DOM ky h 
+//Dom is document object model //ye jo bhi html file m likha h vo document h jo ki object h 
+
+Domm important h samj gye h hum
+ab muje seekhna ya kuch bhi check krna h hema ye sab hum window ke console log m check krege
+
+//getElementById == ye first method h 
+console.log(getElementById('adi'//id ka name likhte h )) 
+//humne ye usse id ke andar jitne element h vo sab return krt ah 
+console.log(getElementById('adi')).id   //ye id ka name return krega
+
+
+//+++++++++++      ID        +++++++++++++//
+id ko hum direct use bhi kr skte h like 
+adi.style.backgroundcolor ="rd"   //ye hum style lga skte h javascript 
+
+//Now time for the text edition
+adi.textConetent  #isse usse id pr jo jo text h vo a jayega
+ab humare passs do cheeje hoti h innerHtml and innerText
+innerHTML , innerText , textConetent   = ye teeno todi todi alg value dete h 
+
+innerText => issme jo value m display krati hu vo show hoti h 
+textConetent => issme jo value hum hidden krte h vo bhi show hoti h
+innerHTML => poora html jo jo likha h uske andar vo ajata h 
+
+
+#jese ki getElementById vese hi getElementByClassName bhi hot ah jise hum class name select kr ke cheeje perform kr skte h 
+
+// ++++++++++++++++++         querySelector           +++++++++++++++++++//
+querySelector actually kise particular class ya heading ya para select krne ke liye use hota h aur hum uske parent vagera ko bhi select kr 
+skte h kise const ya let m store kr ke 
+aur fir usse usme kuch bhi changes kr skte h like for each loop 
+const titlehead = document.querySelector('h1')
+titlehead.forEach((h){
+    h.style.backgroundcolor = "blue";
+    h.style.color = "red";
+})
+
+//+++++++++++++++       querySelectorAll         +++++++++++++//
+# ye selector sare uss naam ke tag aur class ya id ko select kr degaaaa
+const taglist = document.querySelectorAll('h1')
+ab taglist ka use hum array ki trha kr skte h pr actually m ye array ki trha ni ata h 
+const tagelistname = taglist[2]
+tagelistname.style.backgroundcolor = "green"
+

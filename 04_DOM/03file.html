@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>Python</li>
+    </ul>
+</body>
+<script>
+    //Made a function to add new language in this 
+    function addLanguage(langName){
+        const lang = document.createElement('li')
+        lang.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(lang)
+    }
+    addLanguage("ruby")
+    addLanguage("typeScript")
+    //problem ye a rhi h ki jitni bar hum call kr rhe h unti bar tree travers kr rha h poora ka poora ye problem h itna travers ni krna chaiye 
+    //so hum toda optimize function or method ka use krege 
+    function optimize(langName){
+        const li = document.createElement('li');
+        const addText = document.createTextNode(langName)
+        li.appendChild(addText)
+        document.querySelector('.language').appendChild(li)
+    }
+    optimize("Express js")
+
+    //mostly hum innerHTML ka use ni krege hum CreatenoDE ka use krege kuki usse uss poora node travers ni krna pdega
+    //agar muje koisi particular value ya line ko edit krna ho to ky kree
+
+    const edit = document.querySelector("li:nth-child(2)")
+    edit.innerHTML = "Mojo"
+    //const addText = document.
+    //Another way to edit the text 
+    const firstText = document.querySelector("li:first-child");
+    firstText.outerHTML = '<li>Champu </li>'
+
+    //Now time to Remove element 
+    const removes = document.querySelector("li:last-child");
+    removes.remove()
+    //agar particular elemet remove krna h to 
+    const particularremove = document.querySelector("li:nth-child(3)");
+    particularremove.remove()
+</script>
+</html>

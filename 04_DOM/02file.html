@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+    
+</body>
+<script>
+    const div1 = document.createElement('div');    //creating div element in aur html documnet 
+    console.log(div1);
+    div1.className = "main"
+    div1.id = Math.round(Math.random()*10 + 1)
+    div1.style.backgroundColor = "green";
+    div1.style.textAlign = "center"
+    div1.style.color = "white"
+    //ye ssab to ho gya but display ni ho rha h display ke liye hum usse attached krna pdega
+    //div1.innerText = "Hello jiii";  //innertesxt lambi process perform krta h to hum iska use jada ni krege
+    const text = document.createTextNode("chain and code")
+    div1.appendChild(text)
+    //now attached
+    document.body.appendChild(div1)
+</script>
+</html>

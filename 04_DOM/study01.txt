@@ -1,0 +1,15 @@
+//ab isme relation dekehge child aur parent class 
+//
+
+//jab bhi hum paresnt ko select krege to humne htmlcollection milegea which is little similar to array
+
+//it is clear that element in the html are node like they all are store in nodeList format 
+//nodelist ek tree format jese store krta h 
+//like jese tree m cheeje store ho rhi hu 
+//nodelist har ek element ko store krta h like har line break ko , comment ko , text koo , div ko ,
+//ye sab browser ke peeche ho rha hota h to humne pta ni hota ni hota like kitna complex h ye 
+
+//dom se cheeje kese add krte h kese remove krte h vo sab 02file.html h toda dyan se seekhege to kuch bhi ni usme jada
+
+
+

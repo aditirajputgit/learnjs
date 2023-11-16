@@ -1,0 +1,52 @@
+<!DOCTYPE html>  <!-- ye sirf btane ke liye ki apka page type ky h -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+            height: 200px;
+        }
+        .ho{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body  class="bg-black">
+    <div id = "adi"  class="hiii">
+        <div>
+        <h1 class = "ho">DOM Learning on code and chai</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quibusdam nobis pariatur neque eligendi placeat sed tenetur ipsa, quidem voluptas iusto ipsam officia magni distinctio voluptatibus doloribus aspernatur exercitationem praesentium.</p>
+    </div>
+    <div class="parent">
+        <h1 class="day">Monday</h1>
+        <h1 class="day">Tuesday</h1>
+        <h1 class="day">Wednesday</h1>
+        <h1 class="day">Thursday</h1>
+    </div>
+</div>
+</body>
+<script>
+    const parent = document.querySelector('.parent');
+    //console.log(parent);    //check krna ki parent m kon kon se element h 
+    //console.log(parent.children);  // Checking parent ke child kon kon h 
+    //console.log(parent.children[2].innerHTML);  //innerHTML ki vja se hume sirf text milegaaa [2] iss hume 2 element mil rha h a
+    for (let index = 0; index < parent.children.length; index++) {
+        //console.log(parent.children[index].innerHTML);       //loop lga kr parent ke har child ko access kr liya 
+    }
+    parent.children[1].style.color = "red";     //ese hum color change kr skte h 
+    //console.log(parent.firstElementChild);   //first element
+    //console.log(parent.lastElementChild);     //lsat elemet
+
+    const dayOne = document.querySelector('.day')  //first element jiska class day h vo select ho jayega
+    console.log(dayOne);
+    console.log(dayOne.parentElement);  //ye humne dayone ka parent element bta dega
+    console.log(dayOne.nextElementSibling); //hum sibling element ko find kr skte h 
+    console.log(parent.childNodes);  //isme sare NodeList a jayega like h complex tree structure 
+    
+
+</script>
+</html>
