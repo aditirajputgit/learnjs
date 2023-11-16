@@ -1,0 +1,45 @@
+Events bhut sare hote h 
+like kise chej ko click krna vo ek evenet kuch bhi select krna vo ek evenet like evenet bhut type ke hote 
+h 
+//evenet ko click krte h to bhut sari cheej a jati h 
+Ab muje kise bhi chej ko select krna ho to querySelector ka use kr skte h aur uss pr hum perform kr skte h 
+aur usse kise const ya let m store kra lete h uske bd 
+
+//++++++++++++      CLICK          +++++++++++
+hum jis pr bhi ye check perform krna chate ya kuch bhi to function bna kr define krte h like
+const button = document.querySelector('.button')
+button.forEach(function(button){                //sare button ko select kiya aur kuch function perform krna h 
+    button.addEvenetListerner('click',function(e){
+        console.log(e);    //check kr rhe h ki event perform ho rh ah ya ni 
+        console.log(e.target) //kis element ya kis box pr ye perform hua h 
+        ab hum kise bhi target ki id find kr skte h 
+        if(e.target.id === 'blue'){
+            //ab kuch bhi perform kr skte ho 
+            body.style.backgroundClor = "red"
+       }
+    })  //ye bola ki jb bhi button pr koi click kre to ek function perform krna h 
+})
+
+
+
+//++++++++++++++++         AB PROJECT 2 KI BAT KRTE H           ++++++++++++++++++++//
+
+//ye ek submit button ya form type ka event h 
+jab bhi hume kuch value leni h form ye usse to hume usse function ke andar ye try kregee
+
+const form = document.querySelector('form')
+form.addEvenetListerner('submit', function(e){
+    const weight = document.querySelector('#weight).value    //value int m aye to starting toparse lga define
+    const height = toparse(document.querySelector('#height).value)
+    const result = document.querySelector('#result)
+    check krna value valid h ya ni 
+    uske bd bmi cla kr lena and then display bhi kra dena
+
+})
+
+
+
+///++++++++++++++++++   AB 3 PROJECT KI BAT KRTE h   +++++++++++++++++++//
+
+
+
