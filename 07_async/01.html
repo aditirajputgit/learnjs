@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Aditi Rajput</h1>
+    <button id = "btn">Stop</button>
+</body>
+<script>
+    setTimeout(function(){  //method and call an api 
+        console.log("function"); //ye uthne second bd ek bar perform hoga
+    },1000)   
+    setInterval(function(){
+        //console.log("interval");  //setInterval is something like tum muje utna time do m ye krta hi jauga
+    }, 2000);               
+    //setinterval bar bar vo cheeje krta h jb tk rukne ko ni bolo
+    //setTimeout ye bar bar hi perform krta h 
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Hello Everyone";
+    };
+    const changeagain = setTimeout(changeText,2000);
+    //clearTimeout(changeagain,1000);
+    document.querySelector('#btn').addEventListener("click",function(e){
+        clearTimeout(changeagain);
+        console.log("change successfully");
+    },false)
+</script>
+</html>
