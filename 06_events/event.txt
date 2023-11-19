@@ -1,0 +1,32 @@
+JavaScript offers three ways to add an Event Listener to a DOM element. ==>
+Inline event listeners
+onevent listeners
+addEventListener()
+
+#inline event llisterner 
+function greeting() {
+  console.log("Hi Rahul");
+}  -> js 
+<button onclick="greeting()">Greet</button>  -> html
+
+#onevent listeners
+let greetBtnEl = document.getElementById("greetBtn");
+
+greetBtnEl.onclick = function() {
+  console.log("Hi Rahul");
+}; -> js
+<button id="greetBtn">Greet</button> -> html
+
+#addEvenetListerner
+<button id="greetBtn">Greet</button> -> html
+let greetBtn = document.getElementById("greetBtn");
+
+greetBtn.addEventListener("click", function() {
+  console.log("Hi Rahul");
+}); -> js
+
+
+// ++++++++++    MORE EVENT    +++++++++++++++ //
+Keyboard Events
+Mouse Events
+Touch Events
