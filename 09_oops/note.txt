@@ -1,0 +1,11 @@
+//javaScript object oriented programming langugae nhi hoti h 
+//phle hoti thi ye ES6 m uske bd ni 
+javaScript is a prototype-based  language  ya ki functional based language
+
+#object is a collection of properites and methods
+
+#why oop concept
+1-> because code messup ho rha ta 
+
+
+
